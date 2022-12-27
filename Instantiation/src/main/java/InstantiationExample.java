@@ -1,3 +1,4 @@
+import io.javalin.plugin.bundled.GlobalHeaderConfig.ClearSiteData;
 
 public class InstantiationExample {
     /**
@@ -18,6 +19,8 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject(){
-        return null;
+         Object me = new Object();
+         return me;
+       
     }
 }
