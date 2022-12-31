@@ -14,7 +14,20 @@ public class FizzBuzz {
      * @return if a number is divisible by 3, return 'Fizz'. if a number is divisible by 5, return 'Buzz'. If
      * divisible by both, return 'FizzBuzz'. If none of these are true, return a blank string "".
      */
+
+    public static void main(String[] args) {
+        FizzBuzz f1 = new FizzBuzz();
+        String output = f1.FizzBuzzGen(55);
+        System.out.println(output);
+    }
     public String FizzBuzzGen(int n){
+        if(n %3 == 0 && n % 5 == 0){
+            return "FizzBuzz";
+        } else if(n % 5 == 0){
+            return "Buzz";
+        }else if(n %3 == 0){
+            return "Fizz";
+        }
         return "";
     }
 }
