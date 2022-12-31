@@ -22,7 +22,17 @@ public class SetAllArrayElements {
      * @param n number that you will switch all numbers of arr to.
      * @return nothing, because of pass-by-reference, all changes will be reflected in the original array.
      */
-    public void set(int[] arr, int n){
+    public static void main(String[] args) {
+        int[] nums = {9,6,4,2};
+        SetAllArrayElements s1 = new SetAllArrayElements();
+        s1.set(nums, 100); 
 
+    }
+    public void set(int[] arr, int n){
+        for(int i = 0; i < arr.length; i++){
+            int output = arr[i] = n;
+            System.out.println(output);
+
+        }
     }
 }
