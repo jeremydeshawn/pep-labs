@@ -14,6 +14,7 @@ public class CauseUncheckedException {
      * event happens, like running out of computer memory.
      */
     public void throwUncheckedException(){
-
+        String[] arr = {"lv226","hellion prime", "namek","planey vegeta"};
+        System.out.println(arr[4]);
     }
 }
