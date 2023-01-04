@@ -25,7 +25,7 @@ public class CustomExceptionThrower {
         try {
             checkAge(age);
         } catch (Exception e) {
-            // TODO: handle exception
+    
             System.out.println("A problem occurred"+ e);
         }
     }
