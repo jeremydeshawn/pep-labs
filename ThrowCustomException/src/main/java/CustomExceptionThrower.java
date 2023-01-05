@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class CustomExceptionThrower {
 
-    static void checkAge(int age) throws CustomException{
-            if(age < 18){
-               throw new CustomException("you must be 18 or older");
-            } else{
-                System.out.println("Old enough to vote");
-            }
-        } 
+    static void evenNumber(int num) throws CustomException{
+        if(num % 2 == 0){
+            System.out.println("even number");
+        }else{System.out.println("odd number");}
+    }
     
     /**
      * This method should throw a CustomException. CustomException is a custom exception that we've written ourselves
@@ -23,10 +21,12 @@ public class CustomExceptionThrower {
    
     public void throwCustomException(){
         try {
-            Scanner sc = new Scanner(System.in);
-            System.out.println("please enter your age");
-            int age = sc.nextInt();
-            checkAge(age);
+            Scanner n = new Scanner(System.in);
+            int num = n.nextInt();
+            System.out.println("enter a number");
+            evenNumber(num);
+
+
         } catch (CustomException e) {
     
             System.out.println("A problem occurred"+ e);
