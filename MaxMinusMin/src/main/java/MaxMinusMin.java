@@ -13,10 +13,8 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-         nums = new ArrayList<>();
-         int max = Collections.max(nums);
-         int min = (int) Collections.min(nums);
-             
-         return (max - min);
-    }
+        int max = Collections.max(nums);
+        int min = Collections.min(nums);
+        return max - min;
+    } 
 }
