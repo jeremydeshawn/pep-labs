@@ -1,5 +1,7 @@
 package com.revature;
 
+import java.nio.file.Path;
+
 import io.javalin.Javalin;
 
 public class JavalinSingleton {
@@ -16,6 +18,10 @@ public class JavalinSingleton {
         
         //write endpoint here
 
+        app.get("/hello", ctx -> {
+            //logic to be executed when this endpoint is hit
+            ctx.result("Hello World");
+        });
         return app;
     }
     
