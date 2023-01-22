@@ -1,3 +1,4 @@
+import org.eclipse.jetty.util.Index;
 
 //
 
@@ -11,6 +12,13 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
+       if(arr == null){
         return -1;
+       }
+
+       for(int i = 0; i < arr.length; i++){
+        
+       }
+    return -1;
     }
 }
