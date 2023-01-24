@@ -15,10 +15,22 @@ public class IndexOf {
        if(arr == null){
         return -1;
        }
-
+       
        for(int i = 0; i < arr.length; i++){
-        
+        int index = 0;     
+        if(arr[i] == n){
+            index = i;
+            System.out.println(index);
+            return index;
+
+            }
        }
     return -1;
     }
+
+    public static void main(String[] args) {
+        int[] array = {1,5,8,14,20,23};
+        IndexOf in = new IndexOf();
+        in.getIndex(array, 20);
+     }
 }
