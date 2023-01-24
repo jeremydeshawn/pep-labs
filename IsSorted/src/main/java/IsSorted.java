@@ -7,6 +7,22 @@ public class IsSorted {
      * @return true if arr is sorted (all the numbers are in order). false if arr is not sorted.
      */
     public boolean checkSort(int[] arr){
-        return false;
+        for(int i = 0; i < arr.length -1; i++){
+
+            if(arr[i] > arr[i+1]){ 
+
+                return false;
+                }
+            } return true;     
+        }
+       
+        
+    
+
+    public static void main(String[] args) {
+        int[] array = {1,5,8,14,20,23};
+        IsSorted iss = new IsSorted();
+        iss.checkSort(array);
+
+        }
     }
-}
