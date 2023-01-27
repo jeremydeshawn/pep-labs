@@ -1,14 +1,12 @@
 import java.util.Scanner;
+import CustomException;
 
 
 
 public class CustomExceptionThrower {
 
-    static void evenNumber(int num) throws CustomException{
-        if(num % 2 == 0){
-            System.out.println("even number");
-        }else{System.out.println("odd number");}
-    }
+   
+
     
     /**
      * This method should throw a CustomException. CustomException is a custom exception that we've written ourselves
@@ -19,18 +17,7 @@ public class CustomExceptionThrower {
      */
     
    
-    public void throwCustomException(){
-        try {
-            Scanner n = new Scanner(System.in);
-            int num = n.nextInt();
-            System.out.println("enter a number");
-            evenNumber(num);
-
-
-        } catch (CustomException e) {
-    
-            System.out.println("A problem occurred"+ e);
-        }
+    public void throwCustomException (){
+         throw new CustomException();
     }
-
 }
