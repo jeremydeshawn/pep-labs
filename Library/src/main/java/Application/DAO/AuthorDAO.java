@@ -23,12 +23,12 @@ public class AuthorDAO {
      * You only need to change the sql String.
      * @return all Authors.
      */
-    public List<Author> getAllAuthors(){
+    public  List<Author> getAllAuthors(){
         Connection connection = ConnectionUtil.getConnection();
         List<Author> authors = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "Select * From author";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
